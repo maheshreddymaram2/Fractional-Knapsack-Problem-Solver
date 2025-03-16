@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Knapsack Solution</title>
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+    <div class="container" id="solutionPage">
+        <h1>Knapsack Problem Solution</h1>
+        <div id="solution-output"></div>
+        <button class="back-btn" onclick="goBack()">Back</button>
+        <button class="logout-btn" onclick="logout()">Logout</button>
+    </div>
+
+    <script>
+        // Function to navigate back
+        function goBack() {
+            window.location.href = "knapsackproblemsolver.html";
+        }
+
+        // Function to handle logout
+        function logout() {
+            alert("Thanks for visiting our website. I hope you got a solution.");
+            window.location.href = "index.html";
+        }
+
+        // Display solution when the page loads
+        document.addEventListener("DOMContentLoaded", () => {
+            console.log("Solution page loaded. Checking localStorage...");
+            
+            const solutionOutput = document.getElementById("solution-output");
+            const solutionData = JSON.parse(localStorage.getItem("knapsackSolution"));
+
+            if (solutionData) {
+                solutionOutput.innerHTML = `
+                    <h2>Total Value: ${solutionData.totalValue.toFixed(2)}</h2>
+                    <h3>Items Taken:</h3>
+                    <ul>
+                        ${solutionData.solution.map(item => 
+                            `<li>${item.weight} kg - Value: ${item.value.toFixed(2)}</li>`
+                        ).join("")}
+                    </ul>
+                `;
+            } else {
+                solutionOutput.innerHTML = "<p>No solution found.</p>";
+            }
+        });
+    </script>
+</body>
+</html>

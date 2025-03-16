@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login & Signup</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Login Container -->
+    <div class="login-container">
+        <h1>Login</h1>
+        <form id="login-form">
+            <div class="input-group">
+                <label for="username">Username:</label>
+                <input type="text" id="username" required>
+            </div>
+            <div class="input-group">
+                <label for="password">Password:</label>
+                <input type="password" id="password" required>
+            </div>
+            <button type="submit" class="login-btn">Login</button>
+        </form>
+        <p>Don't have an account? <button id="show-signup">Sign Up</button></p>
+        <div id="loginError" class="error"></div>
+    </div>
+
+    <!-- Signup Container -->
+    <div class="signup-container hidden">
+        <h1>Sign Up</h1>
+        <form id="signup-form">
+            <div class="input-group">
+                <label for="signup-username">Username:</label>
+                <input type="text" id="signup-username" required>
+            </div>
+            <div class="input-group">
+                <label for="signup-password">Password:</label>
+                <input type="password" id="signup-password" required>
+            </div>
+            <button type="submit" class="signup-btn">Sign Up</button>
+        </form>
+        <p>Already have an account? <button id="show-login">Login</button></p>
+        <div id="signupError" class="error"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
