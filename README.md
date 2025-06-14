@@ -38,5 +38,15 @@ The application is fully responsive and works smoothly on mobile, tablet, and de
 - **Deployment**: GitHub Pages
 
 ---
-
-## 📂 Project Structure (with filenames) 
+## Fractional-Knapsack-Problem-Solver/
+├── index.html                  # Login and Signup UI
+├── styles.css                  # Styling for index.html
+├── script.js                   # JS logic for login/signup
+├── knapsackproblemsolver.html # UI to input capacity and items
+├── knapsackproblemsolver.css  # Styling for solver interface
+├── knapsackproblemsolver.js   # JS logic for solver table
+├── solution.html               # Final output display page
+├── screenshots/                # Folder containing UI screenshots
+│   ├── login.png               # Screenshot of login/signup page
+│   ├── knapsack_solver.png     # Screenshot of problem solver interface
+│   └── solution.png            # Screenshot of final solution display
