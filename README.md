@@ -51,3 +51,22 @@ The application is fully responsive and works smoothly on mobile, tablet, and de
 -  knapsack_solver.png     # Screenshot of problem solver interface
 -  solution.png            # Screenshot of final solution display
 ---
+---
+
+## 📸 Screenshots (with filenames)
+
+### 🔐 Login / Signup Page (`login.png`)
+![Login Page](screenshots/login.png)
+
+### 📦 Knapsack Problem Solver Interface (`knapsack_solver.png`)
+- Enter knapsack capacity, item weight & value.
+- View all items in a dynamic table.
+![Knapsack Solver](screenshots/knapsack_solver.png)
+
+### 📊 Final Solution Page (`solution.png`)
+- Shows total value and items selected.
+![Solution Output](screenshots/solution.png)
+
+---
+
+## 🌟 If you found this helpful, please star the repo!
